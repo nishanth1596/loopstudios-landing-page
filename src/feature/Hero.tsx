@@ -1,12 +1,20 @@
-import img from "../assets/images/mobile/image-interactive.jpg";
+import imgMobile from "../assets/images/mobile/image-interactive.jpg";
+import imgDesktop from "../assets/images/desktop/image-interactive.jpg";
 
 function Hero() {
   return (
-    <section className="mx-6 mt-24">
-      <img
-        src={img}
-        alt="A man wearing a VR headset with his mouth open and fingers clawed in excitement."
-      />
+    <section className="mx-6 mt-24 md:mx-14">
+      <picture>
+        <source srcSet={imgMobile} media="(max-width:767px)" />
+        <source srcSet={imgDesktop} media="(min-width:768px)" />
+
+        <img
+          src={imgMobile}
+          alt="A man wearing a VR headset with his mouth open and fingers clawed in excitement."
+          className="mx-auto"
+        />
+      </picture>
+
       <article className="mx-6 mt-12 text-center text-black">
         <h2 className="font-JosefinSans text-[2rem] leading-[2rem] font-light uppercase">
           The leader in interactive VR

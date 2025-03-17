@@ -15,7 +15,7 @@ function Product() {
         Our creations
       </h3>
 
-      <div className="space-y-6">
+      <div className="mt-12 space-y-6">
         <OurCreationItem
           description={`Deep
             Earth`}
@@ -73,7 +73,7 @@ function Product() {
         />
       </div>
 
-      <button className="font-Atlat mt-[34px] border py-3.5 pr-[43px] pl-[38px] text-sm leading-3.5 font-normal tracking-[5px] text-black uppercase">
+      <button className="font-Atlat mt-[34px] cursor-pointer border py-3.5 pr-[43px] pl-[38px] text-sm leading-3.5 font-normal tracking-[5px] text-black uppercase transition-colors duration-300 ease-in hover:bg-black hover:text-white">
         See all
       </button>
     </section>

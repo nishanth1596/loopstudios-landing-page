@@ -4,7 +4,7 @@ import Main from "./ui/Main";
 
 function App() {
   return (
-    <div className="">
+    <div className="mx-auto max-w-[90rem]">
       <Header />
       <Main />
       <Footer />
@@ -13,11 +13,3 @@ function App() {
 }
 
 export default App;
-
-//   About
-//   Careers
-//   Events
-//   Products
-//   Support
-
-//   © 2021 Loopstudios. All rights reserved.

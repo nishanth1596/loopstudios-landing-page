@@ -2,12 +2,13 @@ import { OurCreationProps } from "../types/types";
 
 function OurCreationItem({ image, altText, description }: OurCreationProps) {
   return (
-    <div className="relative">
+    <figure className="group relative cursor-pointer">
       <img src={image} alt={altText} />
-      <p className="font-JosefinSans absolute top-[45%] left-5 text-left text-2xl leading-6 font-light whitespace-pre-line text-white uppercase">
+
+      <figcaption className="font-JosefinSans absolute top-[45%] left-5 text-left text-2xl leading-6 font-light whitespace-pre-line text-white uppercase group-hover:text-black">
         {description}
-      </p>
-    </div>
+      </figcaption>
+    </figure>
   );
 }
 

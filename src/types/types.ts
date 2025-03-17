@@ -9,3 +9,7 @@ export type OurCreationProps = {
   altText: string;
   description: string;
 };
+
+export type NavBarProps = {
+  footer?: boolean;
+};

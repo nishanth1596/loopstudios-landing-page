@@ -2,7 +2,7 @@ import { LogoProps } from "../types/types";
 
 function Logo({ onClick, img, ariaLabel }: LogoProps) {
   return (
-    <div className="flex items-center justify-between px-6 pt-10">
+    <div className="flex items-center justify-between px-6 pt-10 md:px-10 md:py-14">
       <img src="/logo.svg" alt="Loopstudios logo" />
       <button
         onClick={onClick}
