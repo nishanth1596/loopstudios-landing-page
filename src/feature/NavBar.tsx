@@ -16,7 +16,12 @@ function NavBar({ footer, hiddenOnSmallScreen }: NavBarProps) {
   }
 
   return (
-    <nav className={hiddenOnSmallScreen ? "hidden lg:block" : undefined}>
+    <nav
+      className={hiddenOnSmallScreen ? "hidden lg:block" : undefined}
+      aria-label={
+        hiddenOnSmallScreen ? "Primary Navigation" : "Main Navigation"
+      }
+    >
       <ul className={currentStyle}>
         <li
           className={`${footer ? style.footer.liStyle : "navList show"} underlineCustomClass`}
