@@ -6,7 +6,7 @@ import pinterestIcon from "/icon-pinterest.svg";
 function SocialMediaNavBar() {
   return (
     <nav aria-label="Social Media links">
-      <ul className="mt-12 mb-5 flex items-center gap-4">
+      <ul className="mt-12 mb-5 flex items-center gap-4 lg:mt-0 lg:mb-0">
         <li>
           <a href="#">
             <img src={facebookIcon} alt="Facebook Icon" />

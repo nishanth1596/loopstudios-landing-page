@@ -12,7 +12,7 @@ function Header() {
   }
 
   return (
-    <header className="relative h-screen w-full bg-[url(/image-hero.jpg)] bg-cover bg-no-repeat md:h-2/3 md:bg-[url(/image-desktop-hero.jpg)] md:pb-20">
+    <header className="relative h-screen w-full bg-[url(/image-hero.jpg)] bg-cover bg-no-repeat md:h-2/3 md:bg-[url(/image-desktop-hero.jpg)] md:pb-20 xl:pb-[11.63rem]">
       <Logo
         onClick={handleMenu}
         ariaLabel="Open navigation menu"
@@ -20,7 +20,7 @@ function Header() {
       />
 
       {!isMenuOpen ? (
-        <h1 className="font-JosefinSans mx-6 mt-40 border-2 px-6 py-[1.63rem] text-[2.5rem] leading-[2.34rem] font-light text-white uppercase md:mx-10 md:mt-20 md:max-w-96">
+        <h1 className="font-JosefinSans mx-6 mt-40 border-2 px-6 py-[1.63rem] text-[2.5rem] leading-[2.34rem] font-light text-white uppercase md:mx-10 md:mt-16 md:max-w-96 xl:mx-[10.31rem] xl:max-w-[40.63rem] xl:p-10 xl:text-7xl xl:leading-[4.5rem]">
           Immersive experiences that deliver
         </h1>
       ) : (

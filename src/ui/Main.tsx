@@ -3,7 +3,7 @@ import Product from "../feature/Product";
 
 function Main() {
   return (
-    <main className="flex w-full flex-col items-center">
+    <main className="flex w-full flex-col items-center lg:block">
       <Hero />
       <Product />
     </main>

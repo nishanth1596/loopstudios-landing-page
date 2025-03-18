@@ -1,10 +1,10 @@
 import { NavBarProps } from "../types/types";
 
-function NavBar({ footer }: NavBarProps) {
+function NavBar({ footer, hiddenOnSmallScreen }: NavBarProps) {
   const style = {
-    base: "mx-6 mt-40 space-y-6 leading-6 uppercase",
+    base: "mx-6 mt-40 space-y-6 leading-6 uppercase lg:gap-8 lg:capitalize lg:mt-0 lg:flex lg:space-y-0",
     footer: {
-      ulStyle: "mt-8 space-y-4 ",
+      ulStyle: "mt-8 space-y-4 lg:mt-3.5 lg:space-y-0 lg:flex lg:gap-8 ",
       liStyle: "font-Atlat text-base leading-[1.56rem] font-normal text-white",
     },
   };
@@ -16,7 +16,7 @@ function NavBar({ footer }: NavBarProps) {
   }
 
   return (
-    <nav>
+    <nav className={hiddenOnSmallScreen ? "hidden lg:block" : undefined}>
       <ul className={currentStyle}>
         <li
           className={`${footer ? style.footer.liStyle : "navList show"} underlineCustomClass`}
