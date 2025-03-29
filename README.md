@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution URL](https://github.com/nishanth1596/loopstudios-landing-page)
-- Live Site URL: [Live site URL](https://nishanth-loopstudios-landing-page/)
+- Live Site URL: [Live site URL](https://nishanth-loopstudios-landing-page.netlify.app/)
 
 ### Features
 
